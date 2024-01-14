@@ -1,0 +1,32 @@
+/* Responsive ---small screen----- */
+@media  screen and (max-width:470px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-banner{
+        flex-direction: column-reverse;
+        
+    }
+    .header-icon{
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top:0;
+
+    }
+    .header-icon img{
+        margin: 10px;
+    }
+    .img-selection{
+        flex-direction: column;
+    }
+    .img-selection-title{
+        flex-direction: column;
+    }
+   .img-container{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+   }
+}
