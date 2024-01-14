@@ -9,7 +9,7 @@
 }
 body{
     background-color: aliceblue;
-    width: 90%;
+    /* width: 90%;  */
     margin: 0 auto;
 }
 /* ------------Header-------- */
@@ -64,6 +64,7 @@ ul li:hover{
     justify-content: space-between;
     align-items: center;
     margin: 1rem 3rem;
+    width: 90%;
 }
 .banner-title{
     color: #3A3A3A;
@@ -113,8 +114,195 @@ ul li:hover{
     margin: 2rem auto;
     margin-top: 7rem;
     padding: 1rem ;
-    background-color: #FFF;
+    background-color: #e3e0e0;
     display: flex;
     justify-content: space-around;
     align-items: center;
  }
+
+ /* ----------Main------------ */
+
+  /* -----img--section */
+  .img-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin-left:100px ;
+}
+
+  .card{
+    width: 329px;
+    height: 436px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 1.5rem;
+    background-color: #FFF;
+    border-radius: 10px;
+  }
+  .img img{
+    width: 300px;
+    height: 256px;
+    flex-shrink: 0;
+  }
+  .car-title{
+    color:#18191F;;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .card-review{
+    display: flex;
+    justify-content:right;
+    width: 11.068px;
+    height: 10.316px;
+    flex-shrink: 0;
+    fill: var(--Orange-60, #FB8200);
+  }
+  .card-para{
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.252px
+  }
+  .img-section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    color: #9c5113;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px; 
+  }
+  /* ------see morer --- */
+  .see{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:.5rem;
+    width: 90%;
+     position: relative;
+    right:100px ;
+  }
+  .see-more{
+    color: rgba(224, 44, 109, 0.87);
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .see-btn{
+    width: 16px;
+    height: 14.001px;
+    flex-shrink: 0;
+    color:#E02C6DDE
+  }
+  /* --------------content-section */
+   .content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    margin-right: 100px;
+    width: 90%;
+   }
+   .content-secton-img img{
+    width: 404px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 9px;
+   }
+   .content-text-title{
+    color: #0A0826;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
+   }
+   .content-para{
+    color: #6C6C6C;
+    width: 501px;
+    height: 88px;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+   }
+   .content-btn{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    display: inline-flex;
+    padding: 10px 34px;
+    align-items: flex-start;
+    gap: 8px;
+    background: #E02C6D;
+    border: 0;
+   }
+   .content-img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 30px;
+    top: 7px;
+   }
+
+   /* -----footer------- */
+   .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width:100%;
+    height: 239px;
+    flex-shrink: 0;
+    background-color: #0A0826;
+    gap:1rem;
+   }
+   .footer-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.2rem;
+   }
+   .footer-title{
+    color: #FFF; 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+   }
+   .footer-para{
+    color: #D9DBE1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    align-items: center;
+   }
+ 
+   .footer-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1.5rem
+   }
