@@ -1,0 +1,120 @@
+/* main -css-------------- */
+
+/* --------------common ---css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:popins ;
+}
+body{
+    background-color: aliceblue;
+    width: 90%;
+    margin: 0 auto;
+}
+/* ------------Header-------- */
+/* --------nav----------- */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin: 2rem 1rem;
+    padding: .5rem;
+    border: 1p solid;
+    border-radius: .5rem;
+    background-color: rgb(147, 106, 16);
+}
+ul li a{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+}
+ul li:hover{
+    background-color: rgb(143, 142, 141);
+}
+.nav-title h2{
+    color: #3A3A3A;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.nav-img{
+    padding:1rem;
+    cursor: pointer;
+}
+/* --------------Header--banner------- */
+.header-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+.banner-title{
+    color: #3A3A3A;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    
+}
+.banner-para{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.banner-img{
+    width: 440px;
+    height: 414px;
+    flex-shrink: 0;
+    background: url("/images/Circle\ design.svg");
+}
+.banner-btn{ 
+    display: inline-flex;
+    padding: 10px 34px;
+    align-items: flex-start;
+    gap: 8px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 41px;
+    background: #E02C6D;
+    margin-top: 2rem;
+}
+.btn-img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 30px;
+    top: 7px;
+}
+/* ----------header--icon--------------- */
+ .header-icon{
+    width: 70%;
+    margin: 2rem auto;
+    margin-top: 7rem;
+    padding: 1rem ;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
