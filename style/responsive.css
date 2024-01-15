@@ -1,32 +1,200 @@
 /* Responsive ---small screen----- */
-@media  screen and (max-width:470px) {
-    .nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-banner{
-        flex-direction: column-reverse;
-        
-    }
-    .header-icon{
-        flex-direction: column;
-        margin: 0 auto;
-        margin-top:0;
+@media  screen and (max-width:490px) {
+   /* ----Header------- */
+ .nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ /* --test-- */
+.nav-title h2{
+   font-size: 1.5rem;
+}
+.banner-img img{
+   width: 200px;
+}
+.footer{
+   width: 100%;
+}
+/* ----------------------------- */
+ .nav-navigation ul{
+   flex-direction: column;
+ }
+ .nav ul{
+   margin: 0 auto;
+   padding: 0;
+ }
+ .header-banner{
+    flex-direction: column;
+    margin: 1rem auto;
+ }
+ .banner-img{
+   width: 100%;
+   height:auto;
+   flex-shrink: 0;
+   background: url("/images/Circle\ design.svg");
+   background-size: cover;
+   margin-top: 2rem;
+}
+ .banner-img img{
+   width: 300px;
+ }
+ .header-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+ }
+ .header-icon img{
+   margin: .5rem .7rem;
+ }
+ /* ----------Main------- */
+ .img-container{
+    grid-template-columns:1fr;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -10px; */
+ }
+  .see{
+    flex-direction: column;
+    justify-content:left;
+    
+ } 
+ .content-section{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+   margin-left: -10px; 
+    position: relative;
+    left:3rem;
+    width: 90%;
+ }
+ .content-section-img img{
+   width: 90%;
+ }
+ .content-text-title h2{
+   font-size: 2rem;
+ }
+ .content-para{
+    width:300px;
+    height: auto;
+ }
+ .content-btn{
+   margin:1rem auto;
+ }
+ 
+}
 
-    }
-    .header-icon img{
-        margin: 10px;
-    }
-    .img-selection{
-        flex-direction: column;
-    }
-    .img-selection-title{
-        flex-direction: column;
-    }
+/* -------medium screen ------------ */
+
+@media screen and (min-width:490px) and (max-width:940px){
    .img-container{
-    display: grid;
-    grid-template-columns: repeat(1fr);
+      grid-template-columns:repeat(2,1fr);
+      margin:0 auto;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: -10px; */
    }
+   .content-section{
+      flex-direction: column-reverse;
+      margin: 1rem auto;
+      margin-left: -10px; 
+      position: relative;
+      left:3rem;
+      width: 90%;
+   }
+   .content-btn{
+      margin:2rem auto;
+    }
+    .nav-title h2{
+      font-size: 1.2rem;
+   }
+   .banner-img img{
+     width:280px;
+  
+   }
+   .banner-img{
+      display: flex;
+       justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background: none;
+   }
+  ul li a{
+   font-size: .7rem;
+ 
+  }
+  ul li{
+   margin: 1rem .8rem;
+   padding: .3rem;
+   border-radius: .5rem;
+   background-color: rgb(147, 106, 16);
+
+}
+.nav-navigation ul{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.banner-title{
+   font-size: 2rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 40px;
+   
+}
+.banner-para{
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+}
+.banner-btn{ 
+   display: inline-flex;
+   padding: 10px 24px;
+   align-items: flex-start;
+   gap: 2px;
+   color: #FFF;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   border-radius: 30px;
+   background: #E02C6D;
+   margin-top: 2rem;
+}
+.btn-img{
+   display: none;
+}
+.header-icon{
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 2rem auto;
+   margin-top: 7rem;
+   padding: 1rem ;
+   background-color: #e3e0e0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.card{
+   width: 260px;
+   height: 436px;
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+   margin: 1.5rem;
+   background-color: #FFF;
+   border-radius: 10px;
+ }
+ .card .img img{
+   width: 95%;
+   object-fit: cover;
+   margin-left: 5px;
+ }
 }
